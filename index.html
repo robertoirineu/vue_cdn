@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="src/app.js" defer> </script>
+	</head>
+	<body>
+		<dir id="app">
+			<form>
+				<input type="text" v-model="input_name"/>
+				<input type="submit" value="enviar" v-on:click="SubmitForm"/>
+
+			</form>
+			Meu nome é:	{{name}} <br>
+		</dir>
+	</body>
+</html>
